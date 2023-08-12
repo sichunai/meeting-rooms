@@ -1,0 +1,70 @@
+.rooms-container {
+  padding: 30px 38px 60px 30px;
+}
+
+.rooms-header {
+  color: #222;
+  font-family: Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 414px;
+  max-height: 61px;
+}
+
+.rooms-description {
+  color: #9a9a9a;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 562px;
+  max-height: 72px;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 25px;
+}
+
+@media screen and (min-width: 1440px) {
+  .rooms-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.room-booking-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-name {
+  color: #222;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.room-spots {
+  color: #9f0086;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.room-book-btn {
+  width: 90px;
+  height: 29px;
+  border-radius: 4px;
+  border: none;
+  background: #9f0086;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+}
