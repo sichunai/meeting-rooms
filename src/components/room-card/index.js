@@ -7,9 +7,15 @@ const RoomCard = ({ room, bookRoom }) => {
     <div className="room-card-container">
       <img className="room-thumbnail" src={thumbnail} alt={`${name}`} />
       <div className="room-booking-container">
-        <div className="room-name">{name}</div>
+        <div data-testid="room-name-test" className="room-name">
+          {name}
+        </div>
         {spots !== 0 && (
-          <button className="room-book-btn" onClick={() => bookRoom(name)}>
+          <button
+            data-testid="room-book-btn-test"
+            className="room-book-btn"
+            onClick={() => bookRoom(name)}
+          >
             Book!
           </button>
         )}
