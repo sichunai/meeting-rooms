@@ -2,12 +2,10 @@ import React from "react";
 import "@testing-library/jest-dom/extend-expect";
 import {
   fireEvent,
-  userEvent,
   render,
   screen,
   waitForElementToBeRemoved,
   within,
-  getByDisplayValue,
 } from "@testing-library/react";
 import Rooms from "../index";
 
